@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background-color: #EBD6DC;
+    width: 100%;
+
+}
+
+.header {
+    position:sticky;
+    top: 0;
+    margin: 0 auto;
+    background-color: #674D66;
+    width: 100dvw;
+    height: 6em;
+    border: none;
+    
+}
+.header>nav {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.header>nav>ul>li {
+    margin-top: 1.5em;
+    font-size: 1.6em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 2rem;
+}
+#form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+label{
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+    padding: 1em;
+   
+}
+input {
+    background-color: #f0ffff;
+    margin: 0 auto;
+    width: auto;
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1em;
+    color: black;
+    box-shadow: 0px 0px 12px grey;
+    outline: none;
+    
+}
+#add {
+    background-color: #000;
+    color: azure;
+    font-weight: bold;
+    margin-left: 1.5em;
+    padding: 1em 1em;
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px grey;
+}
+
+#clear {
+    background-color: #000;
+    color: azure;
+    font-weight: bold;    
+    margin-left: 1.5em;
+    padding: 1em 1em;
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px grey;
+}
+
+#list {
+    
+    display: grid;
+    max-width: 1024px;
+    margin: 0 auto;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.listStyle {
+    box-shadow: 0px 0px 12px grey;;
+    border-radius: 15px;
+    margin-top: 2em;
+    width: 300px;
+    height: 180px;
+    background-color: azure;
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    text-align:justify;
+    padding: 2em 2em;
+    overflow: auto;
+    
+
+}
+
+.listStyle>.deleteBtn  {
+    display: flex;
+    justify-self: left;
+    padding: 0.2em 2em;
+    margin-left: 0;
+    background-color: #674D66;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-top: 0.5em;
+    text-decoration: none;
+
+}
+.deleteBtn:hover {
+    background-color: #b87bb6;
+}
+
+.markedBtn {
+    background-color: #000000;
+    color: azure;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 0.4em 0;
+    margin-top: 0.5em;
+
+}
+.markedBtn:hover {
+    background-color: #292828;
+}
+
+.line-through {
+    text-decoration: line-through;
+    font-weight: bold;
+    color: red;
+}
+
+.deleteBtn {
+    margin-inline-start: 2em;
+}
+/* styling footer*/
+footer {
+    text-align: center; /* Centers the footer content */
+    font-weight: bold;  /* Makes the text bold */
+    margin-top: 20px;    /* Adds some space above the footer */
+}
+
+footer a {
+    color: inherit; /* Ensures the link text inherits the color from the parent (bold text) */
+    text-decoration: none; /* Removes the underline from the link */
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        background-color: #EBD6DC;
+        min-width: 300px;
+        width: 100%; 
+    }
+
+    #form {
+        display: grid;
+        flex-wrap: wrap;
+        max-width: 1024;
+        margin: 0 auto;
+        margin-top: 1rem;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(300PX, 1fr));
+    }
+    label,input,#addItem {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 5rem;
+        
+    }
+}
+
